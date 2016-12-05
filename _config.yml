@@ -11,8 +11,8 @@ permalink:        pretty
 # Setup
 title:            UrbanSim
 tagline:          'Metropolitan Transportation Commission'
-url:              http://metropolitantransportationcommission.github.io/baus_docs
-shorturl:         metropolitantransportationcommission.github.io/baus_docs
+url:              http://metropolitantransportationcommission.github.io/bayarea_urbansim
+shorturl:         metropolitantransportationcommission.github.io/bayarea_urbansim
 
 author:
   name:           'David Ory'
@@ -24,7 +24,7 @@ paginate:         1
 version:          1.0.0
 
 github:
-  repo:           https://github.com/metropolitantransportationcommission/baus_docs/tree/gh-pages
+  repo:           https://github.com/metropolitantransportationcommission/bayarea_urbansim/tree/gh-pages
 
 # This is the list of pages to include in the header of the website.
 pages_list:       

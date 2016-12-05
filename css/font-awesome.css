@@ -4,8 +4,8 @@
  */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('https://data.mtc.ca.gov/baus_docs/fonts/fontawesome-webfont.eot?v=4.1.0');
-  src: url('https://data.mtc.ca.gov/baus_docs/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('https://data.mtc.ca.gov/baus_docs/fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('https://data.mtc.ca.gov/baus_docs/fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('https://data.mtc.ca.gov/baus_docs/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+  src: url('https://data.mtc.ca.gov/bayarea_urbansim/fonts/fontawesome-webfont.eot?v=4.1.0');
+  src: url('https://data.mtc.ca.gov/bayarea_urbansim/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('https://data.mtc.ca.gov/bayarea_urbansim/fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('https://data.mtc.ca.gov/bayarea_urbansim/fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('https://data.mtc.ca.gov/bayarea_urbansim/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
