@@ -30,7 +30,13 @@ CONTENTS
 ## Output Files
 Each Bay Area UrbanSim run (r#) produces output files. Some are only output at the start and/or finish of the run, but most are produced every in each 5th year of the run (yr).
 
-run[r3]\_superdistrict_summaries\_[yr].csv contain a summary of information at the Super District Level (n=33)
+run[r3]\_superdistrict_summaries\_[yr].csv contain a summary of select variables at the Super District level (n=33)
+
+run[r3]\_juris_summaries\_[yr].csv contain a summary of select variables at the juridictional level (n=108)
+
+run[r3]\_taz_summaries\_[yr].csv contain a summary of select variables at the Travel Analysis Zone level (n=1454)
+
+run[r3]\_pda_summaries\_[yr].csv contain a summary of select variables at the Priority Development Area level (n=187)
 
 
 
