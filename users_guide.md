@@ -28,5 +28,10 @@ CONTENTS
 ## Model Exectution
 
 ## Output Files
+Each Bay Area UrbanSim run (r#) produces output files. Some are only output at the start and/or finish of the run, but most are produced every in each 5th year of the run (yr).
+
+run[r3]_superdistrict_summaries_[yr].csv contain a summary of information at the Super District Level (n=33)
+
+
 
 ## Model Schematic
