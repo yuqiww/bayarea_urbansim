@@ -39,6 +39,15 @@ The BASIS team produces three files: parcel geometry, parcel attributes, and bui
 zone_id, taz22, maz, school districts
 
 
+## BAUS Preprocessing Mode
+Run BAUS as ** and it runs only 4 models
+### "preproc_jobs",
+
+
+###            "preproc_households",
+###            "preproc_buildings",
+###            "initialize_residential_units"
+
 ### [Match Aggregate]((https://github.com/MetropolitanTransportationCommission/bayarea_urbansim/blob/master/data_regeneration/match_aggregate.py))
 
 TAZ as local control for both res and comm
