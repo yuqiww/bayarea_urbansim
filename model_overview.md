@@ -35,16 +35,16 @@ BAUS is used to forecast the future by advancing through repeated steps that cha
 * Build new market-rate housing units and commercial space: The for-profit real estate development process is simulated and new buildings are built where they are most feasible. This also build deed-restricted unit that are produced through the market-rate process (e.g., inclusionary zoning).
 * Build new deed-restricted affordable units:: A similar not-for-profit real estate development process produces affordable housing units based on money available within BAUS Accounts (e.g., bond measures).
 * HH/employee location choices: Households and employees are assigned to new locations based on logistic regresssion models that capture the preferences of particular segments (e.g., lower income households, retail jobs).
-* Produce summary tables: Numerous zonal summaries of the detailed geodatabaase are produced for analysis of urban change and for use in the Travel Model.
+* Produce summary tables: Numerous zonal summaries of the detailed geodatabaase are produced for analysis of urban change and for use in the Travel Model. This step includes additional post-processing to get the data ready for the Travel Model's population synthesizer.
 
 Typically, a set of BAUS inputs or assumptions are modified to produce a scenario. Policies such as zoning or fees can be modified. Control totals can be adjusted. Assumptions about preferences or financical situations can be adjsuted. The package of changes is then simulated to forecast its impact on the future urban landscape and these outcomes are often enterered into the travel model to predict future year travel patterns or greenhouse gas emmissions.
 
 
 ## Application Types
 BAUS is used for for three typical types of application:
-* Forecasting: UrbanSim produces a complete map for each five year interval into the future. 
-* Policy Studies
-* Transport Project Evaluation: 
+* Forecasting: UrbanSim produces a complete map for each five year interval into the future. This information is required by statute and useful for planning processes.
+* Policy Studies: BAUS can evaluate the impact of policy changes on, for example, the amount of housing produced, the amount of deed-restricted housing producded, and the locations of future residential or commercial development.
+* Transport Project Evaluation: BAUS provides information on future land use patterns used to evaluate the benefits and costs of large transport infrastructure investments and allows an assessment of how such projects may influence future development.
 
 
 ## Model System
