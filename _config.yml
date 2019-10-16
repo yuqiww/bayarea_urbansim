@@ -15,8 +15,8 @@ url:              http://metropolitantransportationcommission.github.io/bayarea_
 shorturl:         metropolitantransportationcommission.github.io/bayarea_urbansim
 
 author:
-  name:           'David Ory'
-  url:            https://github.com/DavidOry
+  name:           'Michael Reilly'
+  url:            https://github.com/mkreilly
 
 paginate:         1
 
@@ -28,9 +28,10 @@ github:
 
 # This is the list of pages to include in the header of the website.
 pages_list:       
-  Plan Bay Area 2040: 'pba2040/'
+  Bay Area UrbanSim Overview: 'overview/'
   Input Data Preparation: 'input_data/'
   Users Guide: 'users_guide/'
+  Plan Bay Area 2050: 'pba2050/'
 
 # Allow URL Redirects: 
 #  * https://help.github.com/articles/redirects-on-github-pages
