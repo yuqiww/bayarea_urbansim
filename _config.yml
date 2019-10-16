@@ -28,7 +28,7 @@ github:
 
 # This is the list of pages to include in the header of the website.
 pages_list:       
-  Model Overview: 'overview/'
+  Model Overview: 'model_overview/'
   Input Data Preparation: 'input_data/'
   Users Guide: 'users_guide/'
   Plan Bay Area 2050: 'pba2050/'
