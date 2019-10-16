@@ -21,10 +21,20 @@ CONTENTS
 ---
 
 ## Introduction
-Bay Area UrbanSim (BAUS) is a land use or urban economic model used to study urban policy and transportation projects at the Metropolitan Transportation Commission (MTC). It 
+Bay Area UrbanSim (BAUS) is a land use or urban economic model used to forecast metropolitan growth, study urban policies, and evaluate transportation projects at the Metropolitan Transportation Commission (MTC). It is written in Python and is a customized version of the popular UrbanSim model developed by Professor Paul Waddell over the last few decades. 
 
 ## Approach
 BAUS is used to forecast the future by stepping through repeated steps that chart out a potential pathway for future urban growth. The model is run from a file called baus.py that 
+
+
+
+## Application
+BAUS is used for for three typical types of application:
+* Forecasting:
+* Policy Studies
+* Transport Project Evaluation: 
+
+
 
 ## Model System
 BAUS is the middle model in an interactive suite of three model systems maintained by MTC:
