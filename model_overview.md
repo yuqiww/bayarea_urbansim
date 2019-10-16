@@ -54,6 +54,8 @@ BAUS is the middle model in an interactive suite of three model systems maintain
 
 
 ## More Information
+Additional information on UrbanSim can be found at urbansim.com.
 
+More information on urban modeling in general can be found at
 
 ## Model Schematic
