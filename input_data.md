@@ -5,7 +5,7 @@ title: Input Data
 
 *Work in Progress*
 
-# Inputs Data
+# Input Data
 
 ---
 CONTENTS
@@ -16,13 +16,8 @@ CONTENTS
 ---
 
 # Base Year GeoDatabase
+Bay Area UrbanSim requires a representation of the region's parcels, buildings, households, and employees for the base simulation year (2015). This data is assembled and recoded by the BASIS project, enhanced with propietary and inhouse data, imputed to ensure buildings can hold all households/employees, and household/employees are allocated to specific buildings. 
 
-Bay Area UrbanSim requires a representation of the region's parcels, buildings, households, and employees for the base simulation year (2010). This data is pulled together, integrated, and clean up using a series of scripts originally writen by [UDST](https://udst.org) 
-
-## Computing Environment, Setup, and Configuration for Base Year GeoDatabase Cleaning
-
-
-## Running the Script
 
 set of steps
 
