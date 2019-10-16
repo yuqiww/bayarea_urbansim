@@ -21,19 +21,22 @@ CONTENTS
 ---
 
 ## Introduction
-Bay Area UrbanSim (BAUS) is a land use or urban economic model used to forecast metropolitan growth, study urban policies, and evaluate transportation projects at the Metropolitan Transportation Commission (MTC). It is written in Python and is a customized version of the popular UrbanSim model developed by Professor Paul Waddell over the last few decades. 
+Bay Area UrbanSim (BAUS) is a land use or urban economic model used to forecast metropolitan growth, study urban policies, and evaluate transportation projects at the Metropolitan Transportation Commission (MTC). It is written in Python and is a customized version of the popular UrbanSim model developed by Professor Paul Waddell over the last few decades. BAUS simulates the movement of households and employees within the region, and the construction of new buildings to hold those households and employees. In this manner, it is usedf to incrementally forecast potential future urban growth trajectories.
 
 ## Approach
 BAUS is used to forecast the future by advancing through repeated steps that chart out a potential pathway for future urban growth. In BAUS each step represents a five year period. Most steps repeat the same set of sub-steps. In UrbanSim, each of these sub-steps is called a "model".  The file used to run BAUS (baus.py) sets the number steps and the order in which the models are are run. 
 
 A forecast with BAUS begins with a basemap. This is a detailed geodatabase containing all of the region's buildings, households, employees, policies, and transport network for a recent year. This roughly corresponds to tooday's conditions but is a few years in the past due to data collection lag. The buildings are largely an accurate collection of every structure gathered from assessor's data, commercial read estate databases, and other sources. The households and employees are representred at the micro level but their characteristics our built through synthesis (i.e., we only have samples of this informations so we build a full repsresentation that is consistent with these samples. Policies such as zoning and growth limits are collected for each jurisdiction and are binding unless they are explicitly changed for a forecast.
 
-* (hazards)
-* calculate accessibility
-* calculate housing prices and rents
-* hh/employee relcation and transition
+* (Hazards): This optional model simulates the impact of earthquakes and sea level rise by destroying buildings and displacing their inhabitants.
+* Calculate accessibility: Logsum accessibility measures are brought in from the Travel Model and pedestrian accessibility is calculated within UrbanSim
+* Calculate housing prices and rents: Hedonic regression models are applied to current conditions to reestimate current prices and rents
+* HH/employee relcation and transition: Some households and employeees are selected to move. Additiional households and employees are added or subtracted to reflect the exogenous control totals.
+* Add buildings from the Development Projects list: Buildings are forced into the model (as opposed to being explicitly modeled). These represent institutional plans (e.g., universities and hospitals), large approved projects (e.g., Treasure Island), and development that has occurred between the basemap year and the current year (i.e., constructed 2016-2020).
+* Build new housing units and commercial space
 * HH/employee location choices
 * Produce summary tables
+
 
 
 ## Application Types
