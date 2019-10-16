@@ -28,6 +28,12 @@ BAUS is used to forecast the future by advancing through repeated steps that cha
 
 A forecast with BAUS begins with a basemap. This is a detailed geodatabase containing all of the region's buildings, households, employees, policies, and transport network for a recent year. This roughly corresponds to tooday's conditions but is a few years in the past due to data collection lag. The buildings are largely an accurate collection of every structure gathered from assessor's data, commercial read estate databases, and other sources. The households and employees are representred at the micro level but their characteristics our built through synthesis (i.e., we only have samples of this informations so we build a full repsresentation that is consistent with these samples. Policies such as zoning and growth limits are collected for each jurisdiction and are binding unless they are explicitly changed for a forecast.
 
+* (hazards)
+* calculate accessibility
+* calculate housing prices and rents
+* hh/employee relcation and transition
+* HH/employee location choices
+* Produce summary tables
 
 
 ## Application Types
