@@ -9,7 +9,7 @@ highlighter:      rouge
 permalink:        pretty
 
 # Setup
-title:            UrbanSim
+title:            Bay Area UrbanSim
 tagline:          'Metropolitan Transportation Commission'
 url:              http://metropolitantransportationcommission.github.io/bayarea_urbansim
 shorturl:         metropolitantransportationcommission.github.io/bayarea_urbansim
@@ -28,7 +28,7 @@ github:
 
 # This is the list of pages to include in the header of the website.
 pages_list:       
-  Bay Area UrbanSim Overview: 'overview/'
+  Model Overview: 'overview/'
   Input Data Preparation: 'input_data/'
   Users Guide: 'users_guide/'
   Plan Bay Area 2050: 'pba2050/'
