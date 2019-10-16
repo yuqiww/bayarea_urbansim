@@ -35,8 +35,23 @@ The BASIS team produces three files: parcel geometry, parcel attributes, and bui
 ### Fill In Missing Values Using xxxx
 
 
+
+
+
+
 ### Tag Parcels with Zones
 zone_id, taz22, maz, school districts
+
+
+### [Match Aggregate]((https://github.com/MetropolitanTransportationCommission/bayarea_urbansim/blob/master/data_regeneration/match_aggregate.py))
+
+TAZ as local control for both res and comm
+
+
+
+
+### Impute Prices
+
 
 
 ## BAUS Preprocessing Mode
@@ -48,14 +63,6 @@ Run BAUS as ** and it runs only 4 models
 ###            "preproc_buildings",
 ###            "initialize_residential_units"
 
-### [Match Aggregate]((https://github.com/MetropolitanTransportationCommission/bayarea_urbansim/blob/master/data_regeneration/match_aggregate.py))
-
-TAZ as local control for both res and comm
-
-
-
-
-### Impute Prices
 
 ### [Allocate Demand Agents to Buuldings](https://github.com/MetropolitanTransportationCommission/bayarea_urbansim/blob/master/data_regeneration/demand_agent_allocation.py)
 
