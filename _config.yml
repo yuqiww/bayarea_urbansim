@@ -31,7 +31,9 @@ pages_list:
   Model Overview: 'model_overview/'
   Input Data Preparation: 'input_data/'
   Users Guide: 'users_guide/'
-  Plan Bay Area 2050: 'pba2050/'
+  PBA50: 'pba2050/'
+  Horizon: 'horizon/'
+  PBA40: 'pba2040/'
 
 # Allow URL Redirects: 
 #  * https://help.github.com/articles/redirects-on-github-pages
