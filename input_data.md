@@ -18,18 +18,7 @@ CONTENTS
 # Base Year GeoDatabase
 Bay Area UrbanSim requires a representation of the region's parcels, buildings, households, and employees for the base simulation year (2015). This data is assembled and recoded by the BASIS project, enhanced with propietary and inhouse data, imputed to ensure buildings can hold all households/employees, and household/employees are allocated to specific buildings. 
 
-## BASIS Processing
-The BASIS team produces three files: parcel geometry, parcel attributes, and buildings. 
 
-## Basemap Enhancement
-
-### Schools
-
-
-### Additional Buildings
-
-
-### Commercial Real Estate
 
 
 ### Fill In Missing Values Using xxxx
@@ -38,9 +27,6 @@ The BASIS team produces three files: parcel geometry, parcel attributes, and bui
 
 
 
-
-### Tag Parcels with Zones
-zone_id, taz22, maz, school districts
 
 
 ### [Match Aggregate]((https://github.com/MetropolitanTransportationCommission/bayarea_urbansim/blob/master/data_regeneration/match_aggregate.py))
