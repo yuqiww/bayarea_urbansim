@@ -16,9 +16,9 @@ CONTENTS
 ---
 
 # Base Year GeoDatabase
-Bay Area UrbanSim requires a representation of the region's parcels, buildings, households, and employees for the base simulation year (2015). This data is assembled and recoded by the BASIS project, enhanced with propietary and inhouse data, imputed to ensure buildings can hold all households/employees, and household/employees are allocated to specific buildings. 
-
-
+The basemap is a geodatabase containing the region's parcels, buildings, households, and jobs in the baseyear (2015 for PBA50). It is built in two major stages:
+1. The assembly and cleaning of raw dataset. This is done through manual data cleaning in excel and python scripts in ArcGIS Pro and is described at https://github.com/BayAreaMetro/petrale/edit/master/basemap/basemap_assembly_steps.md
+2. Imputation of missing data to conform to regional totals. This is done through python scripts integrated into Bay Area UrbanSim and is described here.
 
 
 ### Fill In Missing Values Using xxxx
