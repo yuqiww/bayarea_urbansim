@@ -20,6 +20,22 @@ The basemap is a geodatabase containing the region's parcels, buildings, househo
 1. The assembly and cleaning of raw dataset. This is done through manual data cleaning in excel and python scripts in ArcGIS Pro and is described at https://github.com/BayAreaMetro/petrale/edit/master/basemap/basemap_assembly_steps.md
 2. Imputation of missing data to conform to regional totals. This is done through python scripts integrated into Bay Area UrbanSim and is described here.
 
+### Table Modifications
+The input tables are transformed in the process below into new versions with "preproc" appended to the names:
+* parcels.csv becomes parcels_
+* buildings
+* households.csv becomes households_preproc.csv with the following changes:
+1. 
+
+tenure
+unittype
+unit_num
+unit_id
+* jobs.csv becomes jobs_preproc.csv with 
+1. empsix 
+2. building_id
+
+
 
 ### Fill In Missing Values Using xxxx
 
