@@ -272,9 +272,54 @@ def correct_baseyear_vacancies(buildings, parcels, jobs, store):
 
 
 @orca.step()
+def impute_residential_units(store):
+    bldg = store['buildings']
+    zone_id = store['parcels'].zone_id
+    bldg['zone_id'] = bldg.parcel_id.map(zone_id)
+    control = pd.read_csv(os.path.join(misc.data_dir(),
+                                       'baseyear_taz_controls.csv'))
+
+    new_units = pd.Series()
+    for i, row in control.iterrows():
+        taz_bldg = bldg.loc[bldg.zone_id==row.taz1454]
+        existing_units = int(taz_bldg.residential_units.sum())
+        control_units = int(row.target_units)
+        unit_diff = control_units - existing_units
+        if unit_diff > 0 and taz_bldg.residential_units.sum() > 0:
+            taz_bldg = taz_bldg.loc[taz_bldg.residential_units>0]
+            taz_bldg['prob'] = (taz_bldg.residential_units /
+                float(taz_bldg.residential_units.sum()))
+            new_unit_ids = np.random.choice(taz_bldg.index,
+                                            unit_diff,
+                                            list(taz_bldg.prob))
+            counts = np.unique(new_unit_ids, return_counts=True)
+            counts = pd.Series(index=counts[0], data=counts[1])
+            new_units = pd.concat([new_units, counts])
+        elif unit_diff > 0 and taz_bldg.residential_units.sum() == 0:
+            print("Please add residential buildings "
+                  "or units to TAZ {} to accommodate {} "
+                  "additional units".format(row.taz1454, unit_diff))
+        else:
+            pass
+
+    bldg['units_to_add'] = bldg.index.map(new_units).fillna(0)
+    bldg['sqft_per_unit'] = (bldg.residential_sqft /
+                             bldg.residential_units.astype('float'))
+    bldg['residential_units'] = (bldg.residential_units +
+                                 bldg.units_to_add).astype('int')
+    bldg.residential_sqft = (bldg.sqft_per_unit *
+                             bldg.residential_units).fillna(0).astype('int')
+
+    del bldg['units_to_add']
+    del bldg['zone_id']
+
+    store['buildings_preproc'] = bldg
+
+
+@orca.step()
 def preproc_buildings(store, parcels, manual_edits):
     # start with buildings from urbansim_defaults
-    df = store['buildings']
+    df = store['buildings_preproc']
 
     # this is code from urbansim_defaults
     df["residential_units"] = pd.concat(

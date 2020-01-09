@@ -248,6 +248,7 @@ def run_models(MODE, SCENARIO):
         orca.run([
             "preproc_jobs",
             "preproc_households",
+            "impute_residential_units",
             "preproc_buildings",
             "initialize_residential_units"
         ])
