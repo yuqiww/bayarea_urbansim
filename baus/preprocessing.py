@@ -279,9 +279,11 @@ def impute_residential_units(store):
     control = pd.read_csv(os.path.join(misc.data_dir(),
                                        'baseyear_taz_controls.csv'))
 
+    btypes = [1, 2, 3, 12]
     new_units = pd.Series()
     for i, row in control.iterrows():
-        taz_bldg = bldg.loc[bldg.zone_id==row.taz1454]
+        taz_bldg = bldg.loc[(bldg.zone_id==row.taz1454) &
+                        (bldg.building_type_id.isin(btypes))]
         existing_units = int(taz_bldg.residential_units.sum())
         control_units = int(row.target_units)
         unit_diff = control_units - existing_units
