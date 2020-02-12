@@ -26,6 +26,7 @@ CONTENTS
 ## Input Files
 
 ## Model Exectution
+All Bay Area UrbanSim run [modes](https://github.com/BayAreaMetro/bayarea_urbansim/blob/4166c25a798f2b8d045546e5b6cef45a5ca9fa4c/baus.py#L244) are initiated by running [baus.py](https://github.com/BayAreaMetro/bayarea_urbansim/blob/master/baus.py). [Simulation](https://github.com/BayAreaMetro/bayarea_urbansim/blob/4166c25a798f2b8d045546e5b6cef45a5ca9fa4c/baus.py#L263) is used to build forecasts. Other modes preprocesses the base year data (only done once until something is changed), estimate model parameters, debug the model, etc. 
 
 ## Output Files
 Each Bay Area UrbanSim run (r#) produces output files. Some are only output at the start and/or finish of the run, but most are produced every in each 5th year of the run (yr).
