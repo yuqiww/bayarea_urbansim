@@ -93,7 +93,7 @@ The [export_to_h5](https://github.com/MetropolitanTransportationCommission/bayar
 # Existing Planned Land Use
 By deafult, BAUS assumes that local jurisdictions' regulations and what type and how much development can occur on a given parcel constrain development activity. This data is usually a jurisdiction's zoning but sometimes represent general plan or other modified capacity data. This information is provided by using two lookup tables:
 * [parcel to zoning type]()
-* [zoning type to zoning constraints]()
+* [zoning_lookup.csv](https://github.com/BayAreaMetro/bayarea_urbansim/blob/master/data/zoning_lookup.csv) joins with the file above using _id_ and provides the contraints for each zoning_type. Maximum allowable intensity is provide by max_far (Floor Area Ratio) for commercial development and by max_dua (Dwelling Units per Acre). _max_height_ constrains either type of development when it in not NULL. The 14 two-letter variables are dummy variable denoting whether each of these building types can be built in this zoning_type.
 
 # Scenario Planned Land Use
 BAUS is usually run using scenario-based inputs. These represent various potential changes to urban constraints and policies. Even "baseline" or No Project run generally use Scenario 0 which implements existing UGBs and a few minor adjustments to the basic planned land use information. The modifications to planned land use for a given scenario are not implemented within the existing planned land typology. Instead, two files contain these modfification relatiomnshiops:
