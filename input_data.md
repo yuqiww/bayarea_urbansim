@@ -97,8 +97,8 @@ By deafult, BAUS assumes that local jurisdictions' regulations and what type and
 
 # Scenario Planned Land Use
 BAUS is usually run using scenario-based inputs. These represent various potential changes to urban constraints and policies. Even "baseline" or No Project run generally use Scenario 0 which implements existing UGBs and a few minor adjustments to the basic planned land use information. The modifications to planned land use for a given scenario are not implemented within the existing planned land typology. Instead, two files contain these modfification relatiomnshiops:
-* In the [parcels file]() each parcel is assigned to zoning modification category (zoning_mod_cat)
-* Eaach scenario-specific modfication table (e.g., for Scenario 4 see [zoning_mods4.csv]() contains modifcations to the existing zoning including up/down-zoning and the addition/subtraction of allowed uses. If nothing is noted in a row, existing planned land use is retained in this scenario. 
+* In parcels.csv inside [2015_09_01_v3.h5](https://mtcdrive.box.com/s/bo4u2dd6ed7k5bpwl2gnfc36lrxop791) each parcel is assigned to zoning modification category (zoning_mod_cat).
+* Each scenario-specific modfication table (e.g., for Scenario 4 see [zoning_mods_4.csv](https://github.com/BayAreaMetro/bayarea_urbansim/blob/master/data/zoning_mods_4.csv)) contains modifcations to the existing zoning including up/down-zoning and the addition/subtraction of allowed uses. If nothing is noted in a row, existing planned land use is retained in this scenario. 
 
 
 
