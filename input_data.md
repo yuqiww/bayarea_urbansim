@@ -91,9 +91,15 @@ The [export_to_h5](https://github.com/MetropolitanTransportationCommission/bayar
 
 
 # Existing Planned Land Use
-
+By deafult, BAUS assumes that local jurisdictions' regulations and what type and how much development can occur on a given parcel constrain development activity. This data is usually a jurisdiction's zoning but sometimes represent general plan or other modified capacity data. This information is provided by using two lookup tables:
+* [parcel to zoning type]()
+* [zoning type to zoning constraints]()
 
 # Scenario Planned Land Use
+BAUS is usually run using scenario-based inputs. These represent various potential changes to urban constraints and policies. Even "baseline" or No Project run generally use Scenario 0 which implements existing UGBs and a few minor adjustments to the basic planned land use information. The modifications to planned land use for a given scenario are not implemented within the existing planned land typology. Instead, two files contain these modfification relatiomnshiops:
+* In the [parcels file]() each parcel is assigned to zoning modification category (zoning_mod_cat)
+* Eaach scenario-specific modfication table (e.g., for Scenario 4 see [zoning_mods4.csv]() contains modifcations to the existing zoning including up/down-zoning and the addition/subtraction of allowed uses. If nothing is noted in a row, existing planned land use is retained in this scenario. 
+
 
 
 
