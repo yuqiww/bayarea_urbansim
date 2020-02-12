@@ -26,7 +26,10 @@ CONTENTS
 ## Input Files
 
 ## Model Exectution
-All Bay Area UrbanSim run [modes](https://github.com/BayAreaMetro/bayarea_urbansim/blob/4166c25a798f2b8d045546e5b6cef45a5ca9fa4c/baus.py#L244) are initiated by running [baus.py](https://github.com/BayAreaMetro/bayarea_urbansim/blob/master/baus.py). [Simulation](https://github.com/BayAreaMetro/bayarea_urbansim/blob/4166c25a798f2b8d045546e5b6cef45a5ca9fa4c/baus.py#L263) is used to build forecasts. Other modes preprocesses the base year data (only done once until something is changed), estimate model parameters, debug the model, etc. 
+All Bay Area UrbanSim run [modes](https://github.com/BayAreaMetro/bayarea_urbansim/blob/4166c25a798f2b8d045546e5b6cef45a5ca9fa4c/baus.py#L244) are initiated by running [baus.py](https://github.com/BayAreaMetro/bayarea_urbansim/blob/master/baus.py). [Simulation](https://github.com/BayAreaMetro/bayarea_urbansim/blob/4166c25a798f2b8d045546e5b6cef45a5ca9fa4c/baus.py#L263) is used to build forecasts. Other modes preprocesses the base year data (only done once until something is changed), estimate model parameters, debug the model, etc. The scenario number can also be specified at run time using "-s 4" etc.
+
+### Simulation Mode
+Simulation mode is used to build forecasts or "run UrbanSim", is the most common mode in daily use, and is the default mode when running baus.py. Simulations in BAUS consist of a list of steps that are exececuted in order for each forecast time period. Other simulation options in baus.py include: setting the time period (e.g., 5-year stepos); setting the start and end years; optionally skipping the first year (otherwise the model forecasts an "end of the base year" forecast which is different from the base year); whether a random seed is used for probability calculations; and what historic runs the current run is compared with. 
 
 ## Output Files
 Each Bay Area UrbanSim run (r#) produces output files. Some are only output at the start and/or finish of the run, but most are produced every in each 5th year of the run (yr).
