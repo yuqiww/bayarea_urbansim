@@ -104,4 +104,4 @@ BAUS is usually run using scenario-based inputs. These represent various potenti
 
 
 # Other Urban Policies
-
+Most urban policies beyond changes to planned land use are established in [policy.yaml](https://github.com/BayAreaMetro/bayarea_urbansim/blob/master/configs/policy.yaml), sometimes using data from a table in /data. For instance, inclusionary zoning is set up at https://github.com/BayAreaMetro/bayarea_urbansim/blob/4166c25a798f2b8d045546e5b6cef45a5ca9fa4c/configs/policy.yaml#L143,
