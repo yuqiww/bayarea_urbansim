@@ -20,10 +20,17 @@ CONTENTS
 ---
 
 ## Computing Environment
+Bay Area UrbanSim (BAUS) is written in python and has been run using MacOS, Windows, and Linux operating systems. The code (except for the pandana sub-model) is single-threaded. The current model generally requires around 20G of memory. 
 
 ## Setup and Configuration
+BAUS is 
+
 
 ## Input Files
+Input files are all in text (csv or yaml) format stored in three locations:
+* Most input data files are csv files in the [/data](https://github.com/BayAreaMetro/bayarea_urbansim/tree/master/data) directory.
+* Several larger csv files are stored on [Box](https://mtcdrive.box.com/s/3cr52b8ccx1l1e59l1zvrud6srmsg0yc) because their large size is doesn't work well with GitHub.
+* Various settings are contained in yaml files in the [/configs](https://github.com/BayAreaMetro/bayarea_urbansim/tree/master/configs) folder.
 
 ## Model Exectution
 All Bay Area UrbanSim run [modes](https://github.com/BayAreaMetro/bayarea_urbansim/blob/4166c25a798f2b8d045546e5b6cef45a5ca9fa4c/baus.py#L244) are initiated by running [baus.py](https://github.com/BayAreaMetro/bayarea_urbansim/blob/master/baus.py). [Simulation](https://github.com/BayAreaMetro/bayarea_urbansim/blob/4166c25a798f2b8d045546e5b6cef45a5ca9fa4c/baus.py#L263) is used to build forecasts. Other modes preprocesses the base year data (only done once until something is changed), estimate model parameters, debug the model, etc. The scenario number can also be specified at run time using "-s 4" etc. Various other settings are covered in baus.py incliuding: log creations; output formatting; and automatic output notifications (slack and maps).
