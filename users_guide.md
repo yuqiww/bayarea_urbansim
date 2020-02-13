@@ -23,13 +23,13 @@ CONTENTS
 Bay Area UrbanSim (BAUS) is written in python and has been run using MacOS, Windows, and Linux operating systems. The code (except for the pandana sub-model) is single-threaded. The current model generally requires around 20G of memory. 
 
 ## Setup and Configuration
-BAUS is 
+BAUS is mainted as a GitHub [repository](https://github.com/BayAreaMetro/bayarea_urbansim). The top-level readme for the repository holds instructions for installing the model and its requirements (i.e., various python generic python packages and a number of UrbanSim-specific bundles from UDST).  
 
 
 ## Input Files
 Input files are all in text (csv or yaml) format stored in three locations:
 * Most input data files are csv files in the [/data](https://github.com/BayAreaMetro/bayarea_urbansim/tree/master/data) directory.
-* Several larger csv files are stored on [Box](https://mtcdrive.box.com/s/3cr52b8ccx1l1e59l1zvrud6srmsg0yc) because their large size is doesn't work well with GitHub. Various csv tables containing base year geodatabase information are contained in an h5 file at this location.
+* Several larger csv files are stored on [Box](https://mtcdrive.box.com/s/3cr52b8ccx1l1e59l1zvrud6srmsg0yc) because their large size is doesn't work well with GitHub. Some of these tables are versioned by putting their creation date in their name since they are not tracked by GitHub. Various csv tables containing base year geodatabase information are contained in an h5 file at this location.
 * Various settings are contained in yaml files in the [/configs](https://github.com/BayAreaMetro/bayarea_urbansim/tree/master/configs) folder.
 
 ## Model Exectution
