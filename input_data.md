@@ -17,12 +17,16 @@ CONTENTS
 
 ---
 
-# Base Year GeoDatabase
+## Base Year GeoDatabase
 The basemap is a geodatabase containing the region's parcels, buildings, households, and jobs in the baseyear (2015 for PBA50). It is built in two major stages:
 1. The assembly and cleaning of raw dataset. This is done through manual data cleaning in excel and python scripts in ArcGIS Pro and is described at https://github.com/BayAreaMetro/petrale/edit/master/basemap/basemap_assembly_steps.md
-2. Imputation of missing data to conform to regional totals. This is done through python scripts integrated into Bay Area UrbanSim and is described here.
+2. Imputation of missing data to fill missing values and conform to regional totals. This is done by running BAUS in preprocessing mode.
 
-### Table Modifications
+### Preprocessing
+BAUS's [preprocessing](https://github.com/BayAreaMetro/bayarea_urbansim/blob/master/baus/preprocessing.py) steps take raw input data and ready it for use in forecasting. This step only needs to be run once on a given instance of the base year data until something is changed. 
+
+
+* Table Modifications
 The input tables are transformed in the process below into new versions with "preproc" appended to the names:
 * parcels.csv becomes parcels_
 * buildings
@@ -39,7 +43,7 @@ unit_id
 
 
 
-### Fill In Missing Values Using xxxx
+* Fill In Missing Values Using xxxx
 
 
 
@@ -47,37 +51,20 @@ unit_id
 
 
 
-### [Match Aggregate]((https://github.com/MetropolitanTransportationCommission/bayarea_urbansim/blob/master/data_regeneration/match_aggregate.py))
+* [Match Aggregate]((https://github.com/MetropolitanTransportationCommission/bayarea_urbansim/blob/master/data_regeneration/match_aggregate.py))
 
 TAZ as local control for both res and comm
 
-
-
-
-### Impute Prices
-
-
-
-## BAUS Preprocessing Mode
-Run BAUS as ** and it runs only 4 models
-### "preproc_jobs",
-
-
-###            "preproc_households",
-###            "preproc_buildings",
-###            "initialize_residential_units"
-
-
-### [Allocate Demand Agents to Buuldings](https://github.com/MetropolitanTransportationCommission/bayarea_urbansim/blob/master/data_regeneration/demand_agent_allocation.py)
+ [Allocate Demand Agents to Buuldings](https://github.com/MetropolitanTransportationCommission/bayarea_urbansim/blob/master/data_regeneration/demand_agent_allocation.py)
 
 allocate jobs from TAZ to building
 
 
 
 
-### Perform Quality Control Summaries
+* Perform Quality Control Summaries
 
-### Export Integrated Parcels
+* Export Integrated Parcels
 The [export_to_h5](https://github.com/MetropolitanTransportationCommission/bayarea_urbansim/blob/master/data_regeneration/export_to_h5.py) script:
 
 * [maps](https://github.com/MetropolitanTransportationCommission/bayarea_urbansim/blob/master/data_regeneration/export_to_h5.py#L15-L31) development_type_id to building_type_id
