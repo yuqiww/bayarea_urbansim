@@ -29,7 +29,7 @@ BAUS is
 ## Input Files
 Input files are all in text (csv or yaml) format stored in three locations:
 * Most input data files are csv files in the [/data](https://github.com/BayAreaMetro/bayarea_urbansim/tree/master/data) directory.
-* Several larger csv files are stored on [Box](https://mtcdrive.box.com/s/3cr52b8ccx1l1e59l1zvrud6srmsg0yc) because their large size is doesn't work well with GitHub.
+* Several larger csv files are stored on [Box](https://mtcdrive.box.com/s/3cr52b8ccx1l1e59l1zvrud6srmsg0yc) because their large size is doesn't work well with GitHub. Various csv tables containing base year geodatabase information are contained in an h5 file at this location.
 * Various settings are contained in yaml files in the [/configs](https://github.com/BayAreaMetro/bayarea_urbansim/tree/master/configs) folder.
 
 ## Model Exectution
